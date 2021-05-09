@@ -5,7 +5,7 @@ class Tabelas{
     };
 
     createUserTable(){
-        const sql = `CREATE TABLE Users (
+        const sql = `CREATE TABLE IF NOT EXISTS Users (
             id int NOT NULL AUTO_INCREMENT, 
             email varchar(100) NOT NULL, 
             password varchar(100) NOT NULL, 
