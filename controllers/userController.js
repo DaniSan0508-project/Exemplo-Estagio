@@ -3,7 +3,7 @@ import User from '../model/User';
 class UserController{
 
     getUsers(req,res){
-        User.lista(res);
+        User.list(res);
     };  
 
     getOneUser(req,res){

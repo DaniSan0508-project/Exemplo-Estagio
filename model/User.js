@@ -1,7 +1,7 @@
 import connection from '../config/connection';
 
 class User{
-    lista(res){
+    list(res){
         const sql = `SELECT * FROM users`;
         connection.query(sql,(err,result)=>{
             if(err){
